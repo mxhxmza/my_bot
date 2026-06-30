@@ -32,20 +32,26 @@ Clone this repository into your ROS2 workspace:
 
 Bash
 mkdir -p ~/ros2_ws/src
+
 cd ~/ros2_ws/src
+
 git clone https://github.com/[Username]/[Repository-Name].git
 
 3. Install Dependencies
 Use rosdep to install necessary dependencies:
 
 Bash
+
 cd ~/ros2_ws
+
 rosdep install --from-paths src --ignore-src -r -y
 
 5. Build the Project
 
 Bash
+
 colcon build --symlink-install
+
 source install/setup.bash
 
 💻 Usage
@@ -55,13 +61,17 @@ It is highly recommended to validate any algorithmic changes in the simulation e
 Launch the Simulated Robot:
 
 Bash
+
 ros2 launch [your_package_name] [your_launch_file]
+
 This brings up the URDF/Xacro model in Gazebo along with the simulated LiDAR and camera plugins.
 
 Launch Navigation & Sensor Fusion (RViz2):
 
 Bash
+
 ros2 launch [your_package_name] [your_launch_file]
+
 Use the RViz2 interface to set 2D Pose Estimates and Nav2 Goals to observe the robot's simulated autonomous behavior.
 
 Phase 2: Physical Hardware Deployment
