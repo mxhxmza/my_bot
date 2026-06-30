@@ -33,7 +33,7 @@ Clone this repository into your ROS2 workspace:
 Bash
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
-git clone https://github.com/[Your-Username]/[Your-Repository-Name].git
+git clone https://github.com/[Username]/[Repository-Name].git
 
 3. Install Dependencies
 Use rosdep to install necessary dependencies:
