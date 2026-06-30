@@ -1,0 +1,105 @@
+[0.000000] (-) TimerEvent: {}
+[0.001929] (my_bot) JobQueued: {'identifier': 'my_bot', 'dependencies': OrderedDict()}
+[0.002067] (my_bot) JobStarted: {'identifier': 'my_bot'}
+[0.029722] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'cmake'}
+[0.035584] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '/home/mxh/dev_ws/src/my_bot', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/mxh/dev_ws/src/my_bot/install/my_bot'], 'cwd': '/home/mxh/dev_ws/src/my_bot/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mxh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/mxh'), ('OLDPWD', '/home/mxh/dev_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mxh/dev_ws/install:/home/mxh/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mxh'), ('NAME', 'HAMZA-PC'), ('WSL_INTEROP', '/run/WSL/353_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Moham/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Moham/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/Moham/AppData/Local/Programs/Antigravity/bin:/mnt/c/Users/Moham/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/mxh/dev_ws/install/my_bot:/home/mxh/install/urdf_example:/home/mxh/install/my_bot:/home/mxh/install/demopackage:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/mxh/dev_ws/src/my_bot/build/my_bot'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/mxh/dev_ws/install/my_bot:/home/mxh/install/urdf_example:/home/mxh/install/my_bot:/home/mxh/install/demopackage:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.099165] (-) TimerEvent: {}
+[0.199799] (-) TimerEvent: {}
+[0.300428] (-) TimerEvent: {}
+[0.401259] (-) TimerEvent: {}
+[0.487841] (my_bot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.501479] (-) TimerEvent: {}
+[0.602267] (-) TimerEvent: {}
+[0.702904] (-) TimerEvent: {}
+[0.803437] (-) TimerEvent: {}
+[0.904108] (-) TimerEvent: {}
+[1.004801] (-) TimerEvent: {}
+[1.056924] (my_bot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.104947] (-) TimerEvent: {}
+[1.205442] (-) TimerEvent: {}
+[1.306021] (-) TimerEvent: {}
+[1.358047] (my_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.406206] (-) TimerEvent: {}
+[1.507318] (-) TimerEvent: {}
+[1.599640] (my_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.607539] (-) TimerEvent: {}
+[1.620917] (my_bot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.621938] (my_bot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.623086] (my_bot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.635425] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.707793] (-) TimerEvent: {}
+[1.808404] (-) TimerEvent: {}
+[1.886048] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.897027] (my_bot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.897570] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.898522] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.908524] (-) TimerEvent: {}
+[1.922943] (my_bot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.008677] (-) TimerEvent: {}
+[2.109331] (-) TimerEvent: {}
+[2.179448] (my_bot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.209508] (-) TimerEvent: {}
+[2.290423] (my_bot) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.309726] (-) TimerEvent: {}
+[2.371494] (my_bot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.409827] (-) TimerEvent: {}
+[2.510334] (-) TimerEvent: {}
+[2.520629] (my_bot) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.558028] (my_bot) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.558400] (my_bot) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.558616] (my_bot) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.584264] (my_bot) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.584510] (my_bot) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.590693] (my_bot) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.599437] (my_bot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.604356] (my_bot) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.610461] (-) TimerEvent: {}
+[2.632955] (my_bot) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.633424] (my_bot) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.639041] (my_bot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.644623] (my_bot) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.663139] (my_bot) StdoutLine: {'line': b'-- Generating done\n'}
+[2.672052] (my_bot) StdoutLine: {'line': b'-- Build files have been written to: /home/mxh/dev_ws/src/my_bot/build/my_bot\n'}
+[2.679635] (my_bot) CommandEnded: {'returncode': 0}
+[2.682697] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'build'}
+[2.682837] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mxh/dev_ws/src/my_bot/build/my_bot', '--', '-j16', '-l16'], 'cwd': '/home/mxh/dev_ws/src/my_bot/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mxh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/mxh'), ('OLDPWD', '/home/mxh/dev_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mxh/dev_ws/install:/home/mxh/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mxh'), ('NAME', 'HAMZA-PC'), ('WSL_INTEROP', '/run/WSL/353_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Moham/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Moham/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/Moham/AppData/Local/Programs/Antigravity/bin:/mnt/c/Users/Moham/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/mxh/dev_ws/install/my_bot:/home/mxh/install/urdf_example:/home/mxh/install/my_bot:/home/mxh/install/demopackage:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/mxh/dev_ws/src/my_bot/build/my_bot'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/mxh/dev_ws/install/my_bot:/home/mxh/install/urdf_example:/home/mxh/install/my_bot:/home/mxh/install/demopackage:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[2.710619] (-) TimerEvent: {}
+[2.754126] (my_bot) CommandEnded: {'returncode': 0}
+[2.756799] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'install'}
+[2.771386] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mxh/dev_ws/src/my_bot/build/my_bot'], 'cwd': '/home/mxh/dev_ws/src/my_bot/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mxh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/mxh'), ('OLDPWD', '/home/mxh/dev_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mxh/dev_ws/install:/home/mxh/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mxh'), ('NAME', 'HAMZA-PC'), ('WSL_INTEROP', '/run/WSL/353_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Moham/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Moham/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/Moham/AppData/Local/Programs/Antigravity/bin:/mnt/c/Users/Moham/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/mxh/dev_ws/install/my_bot:/home/mxh/install/urdf_example:/home/mxh/install/my_bot:/home/mxh/install/demopackage:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/mxh/dev_ws/src/my_bot/build/my_bot'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/mxh/dev_ws/install/my_bot:/home/mxh/install/urdf_example:/home/mxh/install/my_bot:/home/mxh/install/demopackage:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[2.782565] (my_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.783977] (my_bot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.788346] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/config/empty.yaml\n'}
+[2.803971] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/description/gazebo_control.xacro\n'}
+[2.810737] (-) TimerEvent: {}
+[2.823905] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/description/inertial_macros.xacro\n'}
+[2.842362] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/description/lidar.xacro\n'}
+[2.858302] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/description/robot.urdf.xacro\n'}
+[2.872187] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/description/robot_core.xacro\n'}
+[2.888500] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/launch/launch_sim.launch.py\n'}
+[2.905169] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/launch/rsp.launch.py\n'}
+[2.910897] (-) TimerEvent: {}
+[2.922549] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/worlds/empty.world\n'}
+[2.940420] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/worlds/obstacle_course.sdf\n'}
+[2.965044] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot\n'}
+[2.993019] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot\n'}
+[3.011121] (-) TimerEvent: {}
+[3.018209] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/environment/ament_prefix_path.sh\n'}
+[3.048481] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv\n'}
+[3.071900] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/environment/path.sh\n'}
+[3.093478] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/environment/path.dsv\n'}
+[3.111384] (-) TimerEvent: {}
+[3.118297] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/local_setup.bash\n'}
+[3.143609] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/local_setup.sh\n'}
+[3.164623] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/local_setup.zsh\n'}
+[3.185823] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/local_setup.dsv\n'}
+[3.206032] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/package.dsv\n'}
+[3.211502] (-) TimerEvent: {}
+[3.227397] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/ament_index/resource_index/packages/my_bot\n'}
+[3.252801] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/cmake/my_botConfig.cmake\n'}
+[3.272779] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake\n'}
+[3.295415] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/mxh/dev_ws/src/my_bot/install/my_bot/share/my_bot/package.xml\n'}
+[3.311688] (-) TimerEvent: {}
+[3.318222] (my_bot) CommandEnded: {'returncode': 0}
+[3.364677] (my_bot) JobEnded: {'identifier': 'my_bot', 'rc': 0}
+[3.366566] (-) EventReactorShutdown: {}
