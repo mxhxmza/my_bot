@@ -104,12 +104,19 @@ It is highly recommended to validate any algorithmic changes in the simulation e
 
 📂 Repository Structure
 Plaintext
+
   ├── config/             # Navigation and controller YAML files
+  
   ├── description/        # URDF and Xacro files for the robot model
+  
   ├── launch/             # ROS2 launch files for sim and real-world deployment
+  
   ├── maps/               # Generated maps for localization
+  
   ├── src/                # Custom perception and navigation C++/Python nodes
+  
   ├── rviz/               # RViz2 configuration files
+  
   └── README.md
 
 🎥 Media / Demonstrations
