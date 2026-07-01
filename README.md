@@ -23,12 +23,10 @@ Simulation: Gazebo, RViz2
 
 Robot Modeling: URDF, Xacro
 
-Hardware: Hiwonder Ackermann Robot Car, 2D/3D LiDAR, RGB/Depth Camera
 
 🚀 Getting Started
 1. Workspace Setup
 Clone this repository into your ROS2 workspace:
-
 
 Bash
 mkdir -p ~/ros2_ws/src
@@ -37,7 +35,8 @@ cd ~/ros2_ws/src
 
 git clone https://github.com/[Username]/[Repository-Name].git
 
-3. Install Dependencies
+
+2. Install Dependencies
 Use rosdep to install necessary dependencies:
 
 Bash
@@ -46,7 +45,8 @@ cd ~/ros2_ws
 
 rosdep install --from-paths src --ignore-src -r -y
 
-5. Build the Project
+
+3. Build the Project
 
 Bash
 
@@ -54,38 +54,52 @@ colcon build --symlink-install
 
 source install/setup.bash
 
+
 💻 Usage
-Phase 1: Simulation (Gazebo & RViz2)
+Simulation (Gazebo & RViz2)
 It is highly recommended to validate any algorithmic changes in the simulation environment first.
 
-Launch the Simulated Robot:
+  ->Launch Gazebo:
+  
+    Bash
+  
+    ros2 launch my_bot launch_sim.launch.py use_sim_time:=true
+  
+    This brings up the URDF/Xacro model in Gazebo along with the simulated LiDAR and camera plugins.
+  
+  ->Launch RViz2:
+  
+    Bash
+  
+    rviz2
+  
+  ->Launch SLAM Toolbox:
+  
+    Bash
+  
+    ros2 launch slam_toolbox online_async_launch.py params_file:=src/articubot_one/config/mapper_params_online_async.yaml use_sim_time:=true
+  
+  ->Launch twist_mux:
+  
+    Bash
+  
+    ros2 run twist_mux twist_mux --ros-args --params-file ./src/my_bot/config/twist_mux.yaml -r cmd_vel_out:=diff_cont/cmd_vel_unstamped
 
-Bash
+  ->Launch keyboard for manual control:
 
-ros2 launch [your_package_name] [your_launch_file]
+    Bash
 
-This brings up the URDF/Xacro model in Gazebo along with the simulated LiDAR and camera plugins.
+    ros2 run teleop_twist_keyboard teleop_twist_keyboard
+  
+  ->Launch Nav2:
+  
+    Bash
+  
+    ros2 launch nav2_bringup navigation_launch.py params_file:=src/my_bot/config/nav2_params.yaml use_sim_time:=true
+  
+  Use the RViz2 interface to set 2D Nav2 Goals to observe the robot's simulated autonomous behavior.
+  -> The robot will take the shortest path to navigate to its goal!!!
 
-Launch Navigation & Sensor Fusion (RViz2):
-
-Bash
-
-ros2 launch [your_package_name] [your_launch_file]
-
-Use the RViz2 interface to set 2D Pose Estimates and Nav2 Goals to observe the robot's simulated autonomous behavior.
-
-Phase 2: Physical Hardware Deployment
-Once validated in simulation, transition to the physical Hiwonder Ackermann Robot.
-
-Bringup the Hardware:
-
-Bash
-ros2 launch [your_package_name] [your_launch_file]
-
-Launch the Perception & Navigation Stack:
-
-Bash
-ros2 launch [your_package_name] [your_launch_file]
 
 📂 Repository Structure
 Plaintext
@@ -102,7 +116,7 @@ Plaintext
 
 
 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+Contributions, issues, and feature requests are welcome! Feel free to contribute!!!
 
 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
