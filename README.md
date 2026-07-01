@@ -121,6 +121,9 @@ It is highly recommended to validate any algorithmic changes in the simulation e
 
 🎥 Media / Demonstrations
 
+->Final Demonstration of Autonomous Path Navigation
+https://github.com/user-attachments/assets/151aa2b3-fe2e-4c85-abcf-a6af88adc6aa
+
 -> Nav2 in Rviz
 <img width="2560" height="1920" alt="image" src="https://github.com/user-attachments/assets/a3c586b8-9d50-40b3-aed3-4621a1f1ac14" />
 
