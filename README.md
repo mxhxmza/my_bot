@@ -122,18 +122,27 @@ It is highly recommended to validate any algorithmic changes in the simulation e
 🎥 Media / Demonstrations
 
 ->Final Demonstration of Autonomous Path Navigation
-https://github.com/user-attachments/assets/151aa2b3-fe2e-4c85-abcf-a6af88adc6aa
+
+https://github.com/user-attachments/assets/7b5ace14-93f9-4cbf-9b35-c5562d6fb71b
+
 
 -> Nav2 in Rviz
+
 <img width="2560" height="1920" alt="image" src="https://github.com/user-attachments/assets/a3c586b8-9d50-40b3-aed3-4621a1f1ac14" />
 
+
 ->Lidar in Rviz
+
 <img width="2560" height="1627" alt="image" src="https://github.com/user-attachments/assets/81df6c59-92c5-483c-a41e-a5629ddc9259" />
 
+
 ->SLAM in Rviz
+
 <img width="2560" height="1920" alt="image" src="https://github.com/user-attachments/assets/e90d7433-0110-43ca-b5c7-46b1566f6850" />
 
+
 -> Virtual Environment in Gazebo
+
 <img width="2560" height="1920" alt="image" src="https://github.com/user-attachments/assets/eab5ccba-587b-4887-a245-68dfaaa6da4f" />
 
 
