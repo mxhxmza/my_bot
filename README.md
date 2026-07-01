@@ -103,7 +103,6 @@ It is highly recommended to validate any algorithmic changes in the simulation e
 
 
 📂 Repository Structure
-Plaintext
 
   ├── config/             # Navigation and controller YAML files
   
