@@ -28,31 +28,32 @@ Robot Modeling: URDF, Xacro
 1. Workspace Setup
 Clone this repository into your ROS2 workspace:
 
-Bash
-mkdir -p ~/ros2_ws/src
+  Bash
+    
+    mkdir -p ~/ros2_ws/src
 
-cd ~/ros2_ws/src
+    cd ~/ros2_ws/src
 
-git clone https://github.com/[Username]/[Repository-Name].git
+    git clone https://github.com/[Username]/[Repository-Name].git
 
 
 2. Install Dependencies
 Use rosdep to install necessary dependencies:
 
-Bash
+  Bash
 
-cd ~/ros2_ws
+    cd ~/ros2_ws
 
-rosdep install --from-paths src --ignore-src -r -y
+    rosdep install --from-paths src --ignore-src -r -y
 
 
 3. Build the Project
 
-Bash
+  Bash
 
-colcon build --symlink-install
+    colcon build --symlink-install
 
-source install/setup.bash
+    source install/setup.bash
 
 
 💻 Usage
@@ -61,7 +62,7 @@ It is highly recommended to validate any algorithmic changes in the simulation e
 
   ->Launch Gazebo:
   
-    Bash
+  Bash
   
     ros2 launch my_bot launch_sim.launch.py use_sim_time:=true
   
@@ -69,31 +70,31 @@ It is highly recommended to validate any algorithmic changes in the simulation e
   
   ->Launch RViz2:
   
-    Bash
+  Bash
   
     rviz2
   
   ->Launch SLAM Toolbox:
   
-    Bash
+  Bash
   
     ros2 launch slam_toolbox online_async_launch.py params_file:=src/articubot_one/config/mapper_params_online_async.yaml use_sim_time:=true
   
   ->Launch twist_mux:
   
-    Bash
+  Bash
   
     ros2 run twist_mux twist_mux --ros-args --params-file ./src/my_bot/config/twist_mux.yaml -r cmd_vel_out:=diff_cont/cmd_vel_unstamped
 
   ->Launch keyboard for manual control:
 
-    Bash
+  Bash
 
     ros2 run teleop_twist_keyboard teleop_twist_keyboard
   
   ->Launch Nav2:
   
-    Bash
+  Bash
   
     ros2 launch nav2_bringup navigation_launch.py params_file:=src/my_bot/config/nav2_params.yaml use_sim_time:=true
   
@@ -103,13 +104,13 @@ It is highly recommended to validate any algorithmic changes in the simulation e
 
 📂 Repository Structure
 Plaintext
-├── config/             # Navigation and controller YAML files
-├── description/        # URDF and Xacro files for the robot model
-├── launch/             # ROS2 launch files for sim and real-world deployment
-├── maps/               # Generated maps for localization
-├── src/                # Custom perception and navigation C++/Python nodes
-├── rviz/               # RViz2 configuration files
-└── README.md
+  ├── config/             # Navigation and controller YAML files
+  ├── description/        # URDF and Xacro files for the robot model
+  ├── launch/             # ROS2 launch files for sim and real-world deployment
+  ├── maps/               # Generated maps for localization
+  ├── src/                # Custom perception and navigation C++/Python nodes
+  ├── rviz/               # RViz2 configuration files
+  └── README.md
 
 🎥 Media / Demonstrations
 
